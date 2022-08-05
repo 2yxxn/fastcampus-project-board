@@ -30,6 +30,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor' // 사용자 커스텀 프로퍼티도 문서 세팅이 가능해지고 idle 의 지원을 받을 수 있음
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     // queryDSL 설정
