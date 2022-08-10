@@ -18,11 +18,19 @@ public class ArticleCommentService {
 
     // 해당 게시글에 달린 댓글 리스트 조회
     @Transactional(readOnly = true)
-    public List<ArticleCommentDto> searchArticleComment(Long articleId) {
+    public List<ArticleCommentDto> searchArticleComments(Long articleId) {
         return List.of();
     }
 
     // 댓글 저장
     public void saveArticleComment(ArticleCommentDto dto) {
+    }
+
+    // 댓글 업데이트
+    public void updateArticleComment(ArticleCommentDto dto) {
+    }
+
+    // 댓글 삭제
+    public void deleteArticleComment(Long articleCommentId) {
     }
 }
