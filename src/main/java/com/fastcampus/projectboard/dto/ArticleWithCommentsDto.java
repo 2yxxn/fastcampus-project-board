@@ -29,7 +29,7 @@ public record ArticleWithCommentsDto(
                 UserAccountDto.from(entity.getUserAccount()),
                 entity.getArticleComments().stream()
                         .map(ArticleCommentDto::from)
-                        .collect(Collectors.toCollection(LinkedHashSet::new)),
+                        .collect(Collectors.toCollection(LinkedHashSet::new)), // LinkedHashSet : 순서 보장
                 entity.getTitle(),
                 entity.getContent(),
                 entity.getHashtag(),
