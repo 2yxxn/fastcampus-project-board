@@ -84,4 +84,9 @@ public class ArticleService {
     public void deleteArticle(long articleId) {
         articleRepository.deleteById(articleId);
     }
+
+    // 게시글 수 반환
+    public long getArticleCount() {
+        return articleRepository.count();
+    }
 }
